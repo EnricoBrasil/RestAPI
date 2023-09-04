@@ -10,3 +10,8 @@ datasource db {
   url      = "file:./dev.db"
 }
 
+model funcionarios {
+  cod_MatriculaFunc       String         @id @default(uuid())
+  nome                    String
+  idade                   Int 
+}
